@@ -1,0 +1,30 @@
+:root {
+  --primary: #0b1e3b;      // Azul Navy
+  --accent: #5d2a18;       // Café Brown
+  --accent-hover: #3d1b0f; 
+  --bg-cream: #fdf6e3;     // Crema
+  --white: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --muted: rgba(255, 255, 255, 0.7);
+
+  --radius: 1rem;
+  --shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // Evita que el padding ensanche los elementos
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-auto($min-width: 18rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  gap: 2rem;
+}

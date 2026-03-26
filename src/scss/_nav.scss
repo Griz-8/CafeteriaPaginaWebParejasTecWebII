@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--primary);
+  padding: 1rem 0;
+  box-shadow: 0 0.2rem 1rem rgba(0,0,0,0.2);
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--white);
+
+    img { width: 3rem; border-radius: 50%; }
+    strong { display: block; font-size: 1.1rem; }
+    span { font-size: 0.75rem; opacity: 0.8; }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+
+      &:hover, &.active { color: var(--bg-cream); }
+    }
+  }
+}
+
+@media (max-width: 48rem) {
+  .navbar .nav-links { display: none; } // Ideal para luego poner un menú hamburguesa
+}

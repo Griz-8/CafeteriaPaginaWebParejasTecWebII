@@ -1,0 +1,20 @@
+@use 'variables';
+@use 'nav';
+@use 'home';
+@use 'cards';
+@use 'footer';
+@use 'menu';
+@use 'contacto';
+
+
+.container {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+}

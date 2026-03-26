@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+.footer {
+  background: #000;
+  color: var(--white);
+  padding: 5rem 0 2rem;
+
+  .footer-grid { @include grid-auto(15rem); margin-bottom: 3rem; }
+
+  h4 { margin-bottom: 1.5rem; color: var(--white); border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+  
+  ul {
+    list-style: none;
+    a { color: #999; text-decoration: none; transition: var(--transition); &:hover { color: var(--white); } }
+  }
+
+  .social-icons span {
+    background: #222; width: 2.5rem; height: 2.5rem; border-radius: 50%;
+    @include flex-center; display: inline-flex; margin-right: 0.5rem;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+}
