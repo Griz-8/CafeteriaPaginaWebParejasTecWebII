@@ -49,14 +49,10 @@ Archivo principal: [js/main.js](js/main.js)
 - Diseño adaptable para escritorio, tablet y movil con Flexbox/Grid + media queries.
 
 ## e) Capturas del resultado final (pendiente de adjuntar)
-- Vista escritorio: colocar captura en carpeta `capturas/`.
-- Vista tablet: colocar captura en carpeta `capturas/`.
-- Vista movil: colocar captura en carpeta `capturas/`.
+- Vista escritorio: colocar captura en carpeta `capturas/vista_escritorio`.
+- Vista tablet: colocar captura en carpeta `capturas/vista_tablet`.
+- Vista movil: colocar captura en carpeta `capturas/vista_movil`.
 
-Sugerencia de nombres:
-- `capturas/home-desktop.png`
-- `capturas/menu-tablet.png`
-- `capturas/contact-mobile.png`
 
 ## Verificacion tecnica realizada
 - Navegacion entre templates revisada y funcional.
