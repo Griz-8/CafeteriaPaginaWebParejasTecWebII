@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menú | Caine Cafe</title>
     <link rel="stylesheet" href="dist/css/main.css" />
-    <script type="module" src="src/js/main.js"></script>
-    <script src="js/main.js"></script>
   </head>
   <body class="menu-page">
     <header>
       <nav class="navbar">
         <div class="container nav-content">
-          <a href="index.html" class="logo-wrapper">
+          <a href="home.html" class="logo-wrapper">
             <img src="assets/CaineLogo.png" alt="Caine Logo" />
             <div class="logo-text">
               <strong>Caine Cafe</strong>
@@ -20,9 +18,18 @@
             </div>
           </a>
 
-          <button class="menu-toggle">☰</button>
+          <button
+            class="nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-          <ul class="nav-links">
+          <ul class="nav-links" id="primary-navigation">
             <li><a href="home.html">Inicio</a></li>
             <li><a href="menu.html" class="active">Menú</a></li>
             <li><a href="contact.html">Contacto</a></li>
@@ -45,11 +52,11 @@
       <section class="menu-section">
         <div class="container">
           <div class="filter-container">
-            <button class="filter-btn active">Todos</button>
-            <button class="filter-btn">Café Caliente</button>
-            <button class="filter-btn">Métodos</button>
-            <button class="filter-btn">Bebidas Frías</button>
-            <button class="filter-btn">Repostería</button>
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="hot">Café Caliente</button>
+            <button class="filter-btn" data-filter="methods">Métodos</button>
+            <button class="filter-btn" data-filter="cold">Bebidas Frías</button>
+            <button class="filter-btn" data-filter="pastry">Repostería</button>
           </div>
 
           <div class="menu-info">
@@ -57,7 +64,7 @@
           </div>
 
           <div class="products-grid">
-            <article class="product-card">
+            <article class="product-card" data-category="hot">
               <div class="card-img">
                 <img src="assets/espresso.jpg" alt="Espresso" />
               </div>
@@ -69,12 +76,12 @@
                 </p>
                 <div class="card-footer">
                   <span class="price">Bs. 12</span>
-                  <button class="btn-order">Ordenar</button>
+                  <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-category="hot">
               <div class="card-img">
                 <img src="assets/latte.jpg" alt="Latte" />
               </div>
@@ -84,12 +91,12 @@
                 <p>Leche vaporizada con microespuma y espresso de origen.</p>
                 <div class="card-footer">
                   <span class="price">Bs. 18</span>
-                  <button class="btn-order">Ordenar</button>
+                  <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-category="hot">
               <div class="card-img">
                 <img src="assets/capuccino-caliente.jpg" alt="Cappuccino" />
               </div>
@@ -101,12 +108,12 @@
                 </p>
                 <div class="card-footer">
                   <span class="price">Bs. 16</span>
-                  <button class="btn-order">Ordenar</button>
+                  <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-category="methods">
               <div class="card-img">
                 <img src="assets/v60.jpg" alt="V60" />
               </div>
@@ -119,12 +126,12 @@
                 </p>
                 <div class="card-footer">
                   <span class="price">Bs. 22</span>
-                  <button class="btn-order">Ordenar</button>
+                  <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-category="methods">
               <div class="card-img">
                 <img src="assets/iced-lemon-tea.jpg" alt="Chemex" />
               </div>
@@ -134,12 +141,12 @@
                 <p>Perfil limpio y suave con cuerpo ligero y gran claridad.</p>
                 <div class="card-footer">
                   <span class="price">Bs. 25</span>
-                  <button class="btn-order">Ordenar</button>
+                  <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-category="cold">
               <div class="card-img">
                 <img src="assets/coldbrew.jpg" alt="Cold Brew" />
               </div>
@@ -149,12 +156,12 @@
                 <p>Extracción en frío durante 18 horas, suave y refrescante.</p>
                 <div class="card-footer">
                   <span class="price">Bs. 20</span>
-                  <button class="btn-order">Ordenar</button>
+                  <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
             </article>
 
-            <article class="product-card">
+            <article class="product-card" data-category="pastry">
               <div class="card-img">
                 <img src="assets/cheesecake.jpg" alt="Cheesecake" />
               </div>
@@ -166,7 +173,7 @@
                 </p>
                 <div class="card-footer">
                   <span class="price">Bs. 24</span>
-                  <button class="btn-order">Ordenar</button>
+                  <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
             </article>
@@ -190,9 +197,9 @@
         <div class="footer-links">
           <h4>Enlaces Rápidos</h4>
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Menú</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contact.html">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-contact">
@@ -231,5 +238,7 @@
         <p>© 2026 Caine Cafe. Todos los derechos reservados.</p>
       </div>
     </footer>
+
+    <script src="js/main.js" defer></script>
   </body>
 </html>
