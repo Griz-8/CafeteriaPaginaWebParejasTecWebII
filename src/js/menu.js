@@ -4,19 +4,25 @@ export function initMenuFilters() {
 
   if (!filterButtons.length) return;
 
+  const normalize = (text) => text.toLowerCase().trim();
+
   filterButtons.forEach(button => {
     button.addEventListener("click", () => {
 
+      // Activar botón
       filterButtons.forEach(btn => btn.classList.remove("active"));
       button.classList.add("active");
 
-      const category = button.textContent.trim();
+      const category = normalize(button.textContent);
 
       products.forEach(product => {
-        const productCategory = product.querySelector(".category-tag").textContent.trim();
+        const tag = product.querySelector(".category-tag");
+        if (!tag) return;
 
-        if (category === "Todos" || category === productCategory) {
-          product.style.display = "flex";
+        const productCategory = normalize(tag.textContent);
+
+        if (category === "todos" || category === productCategory) {
+          product.style.display = "";
         } else {
           product.style.display = "none";
         }
