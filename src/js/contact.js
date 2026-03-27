@@ -9,16 +9,16 @@ if (form) {
     const message = form.querySelector("textarea");
 
     if (!name.value || !email.value || !message.value) {
-      alert("⚠️ Por favor completa todos los campos");
+      alert(" Por favor completa todos los campos");
       return;
     }
 
     if (!email.value.includes("@")) {
-      alert("⚠️ Email inválido");
+      alert(" Email inválido");
       return;
     }
 
-    alert("✅ Mensaje enviado correctamente");
+    alert(" Mensaje enviado correctamente");
     form.reset();
   });
 }
