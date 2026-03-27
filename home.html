@@ -5,32 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caine Cafe | Cafetería de Especialidad</title>
     <link rel="stylesheet" href="dist/css/main.css" />
-    <script type="module" src="src/js/main.js"></script>
   </head>
 
-  <header>
-    <nav class="navbar">
-      <div class="container nav-content">
-        <a href="index.html" class="logo-wrapper">
-          <img src="assets/CaineLogo.png" alt="Caine Logo" />
-          <div class="logo-text">
-            <strong>Caine Cafe</strong>
-            <span>Cochabamba</span>
-          </div>
-        </a>
+  <body class="home-page">
+    <header>
+      <nav class="navbar">
+        <div class="container nav-content">
+          <a href="home.html" class="logo-wrapper">
+            <img src="assets/CaineLogo.png" alt="Caine Logo" />
+            <div class="logo-text">
+              <strong>Caine Cafe</strong>
+              <span>Cochabamba</span>
+            </div>
+          </a>
 
-        <button class="menu-toggle">☰</button>
+          <button
+            class="nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-        <ul class="nav-links">
-          <li><a href="home.html" class="active">Inicio</a></li>
-          <li><a href="menu.html">Menú</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+          <ul class="nav-links" id="primary-navigation">
+            <li><a href="home.html" class="active">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <body>
     <section class="hero">
       <img
         src="assets/fotoCafeteriaNoche.jpg"
@@ -47,7 +55,9 @@
         </h1>
         <p>Café de especialidad en el corazón de Cochabamba.</p>
         <div class="hero-actions">
-          <button class="btn-coffee">Ver Menú ➔</button>
+          <button class="btn-coffee js-go-menu" data-target="menu.html">
+            Ver Menú ➔
+          </button>
         </div>
       </div>
     </section>
@@ -103,7 +113,7 @@
               <p>Preparado con ingredientes frescos y sabores de estación.</p>
               <div class="card-footer">
                 <span class="price">Bs. 18</span>
-                <button class="btn-order">Ordenar</button>
+                <button class="btn-order js-order-btn">Ordenar</button>
               </div>
             </div>
           </article>
@@ -120,7 +130,7 @@
               <p>Café filtrado + croissant artesanal + jugo natural.</p>
               <div class="card-footer">
                 <span class="price">Bs. 25</span>
-                <button class="btn-order">Ordenar</button>
+                <button class="btn-order js-order-btn">Ordenar</button>
               </div>
             </div>
           </article>
@@ -134,14 +144,16 @@
               <p>Equilibrio perfecto entre espresso, leche y microespuma.</p>
               <div class="card-footer">
                 <span class="price">Bs. 20</span>
-                <button class="btn-order">Ordenar</button>
+                <button class="btn-order js-order-btn">Ordenar</button>
               </div>
             </div>
           </article>
         </div>
 
         <div class="center-btn">
-          <button class="btn-coffee">Ver Menú Completo ➔</button>
+          <button class="btn-coffee js-go-menu" data-target="menu.html">
+            Ver Menú Completo ➔
+          </button>
         </div>
       </div>
     </section>
@@ -160,7 +172,9 @@
             <li>🌿 Ambiente cómodo y elegante</li>
             <li>📍 Ubicación céntrica y accesible</li>
           </ul>
-          <button class="btn-coffee">Ver Ubicación ➔</button>
+          <button class="btn-coffee js-go-contact" data-target="contact.html">
+            Ver Ubicación ➔
+          </button>
         </div>
         <div class="location-image">
           <img src="assets/interiorjpg.jpg" alt="Caine Cafe Interior" />
@@ -178,7 +192,9 @@
           <div class="price-card">
             <h3>Clásico</h3>
             <div class="amount">Bs. 0</div>
-            <button class="btn-blue">Visítanos</button>
+            <button class="btn-blue js-go-contact" data-target="contact.html">
+              Visítanos
+            </button>
             <ul class="price-features">
               <li>✓ Acceso libre</li>
               <li>✓ Atención personalizada</li>
@@ -189,7 +205,7 @@
           <div class="price-card popular">
             <h3>Amante del Café</h3>
             <div class="amount">Bs. 150 <span>/ Mes</span></div>
-            <button class="btn-white">Unirme</button>
+            <button class="btn-white js-join-btn">Unirme</button>
             <ul class="price-features">
               <li>✓ Café filtrado ilimitado</li>
               <li>✓ 10% en bebidas</li>
@@ -199,7 +215,7 @@
           <div class="price-card">
             <h3>Experto</h3>
             <div class="amount">Bs. 300 <span>/ Mes</span></div>
-            <button class="btn-blue">Unirme</button>
+            <button class="btn-blue js-join-btn">Unirme</button>
             <ul class="price-features">
               <li>✓ Todo el plan anterior</li>
               <li>✓ Talleres de barismo</li>
@@ -226,9 +242,9 @@
       <div class="footer-links">
         <h4>Enlaces Rápidos</h4>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Menú</a></li>
-          <li><a href="#">Contacto</a></li>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contact.html">Contacto</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -266,5 +282,8 @@
     <div class="footer-bottom">
       <p>© 2026 Caine Cafe. Todos los derechos reservados.</p>
     </div>
-  </footer>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

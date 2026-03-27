@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables' as *;
 
 .menu-page {
@@ -44,7 +45,7 @@
       transition: var(--transition);
 
       &:hover {
-        background: lighten(#162447, 10%);
+        background: color.adjust(#162447, $lightness: 10%);
       }
 
       &.active {
@@ -71,6 +72,14 @@
 
     @media (min-width: 64rem) {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card {
+      transition: opacity 0.2s ease, transform 0.2s ease;
+
+      &.is-hidden {
+        display: none;
+      }
     }
   }
 }

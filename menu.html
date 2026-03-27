@@ -1,174 +1,244 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menú | Caine Cafe</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú | Caine Cafe</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body class="menu-page">
+    <header>
+      <nav class="navbar">
+        <div class="container nav-content">
+          <a href="home.html" class="logo-wrapper">
+            <img src="assets/CaineLogo.png" alt="Caine Logo" />
+            <div class="logo-text">
+              <strong>Caine Cafe</strong>
+              <span>Cochabamba</span>
+            </div>
+          </a>
 
-  <link rel="stylesheet" href="dist/css/main.css" />
-  <script type="module" src="src/js/main.js"></script>
-</head>
+          <button
+            class="nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-<body class="menu-page">
-
-<header>
-  <nav class="navbar">
-    <div class="container nav-content">
-      <a href="index.html" class="logo-wrapper">
-        <img src="assets/CaineLogo.png" alt="Caine Logo" />
-        <div class="logo-text">
-          <strong>Caine Cafe</strong>
-          <span>Cochabamba</span>
+          <ul class="nav-links" id="primary-navigation">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="menu.html" class="active">Menú</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
         </div>
-      </a>
+      </nav>
+    </header>
 
-      <button class="menu-toggle">☰</button>
-
-      <ul class="nav-links">
-        <li><a href="home.html">Inicio</a></li>
-        <li><a href="menu.html" class="active">Menú</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-<section class="menu-hero">
-  <div class="container hero-content">
-    <h1>Nuestro Menú</h1>
-    <p>Explora nuestra selección de café de especialidad y productos artesanales.</p>
-  </div>
-</section>
-
-<section class="menu-section">
-  <div class="container">
-
-    <div class="filter-container">
-      <button class="filter-btn active">Todos</button>
-      <button class="filter-btn">Café Caliente</button>
-      <button class="filter-btn">Métodos</button>
-      <button class="filter-btn">Bebidas Frías</button>
-      <button class="filter-btn">Repostería</button>
-    </div>
-
-    <div class="menu-info">
-      <h2>Nuestras Especialidades</h2>
-    </div>
-
-    <div class="products-grid">
-
-      <article class="product-card">
-        <div class="card-img">
-          <img src="assets/espresso.jpg" alt="Espresso">
+    <main>
+      <section class="menu-hero">
+        <div class="container hero-content">
+          <h1>Nuestro Menú</h1>
+          <p>
+            Explora nuestra selección de café de especialidad, métodos de
+            extracción y acompañamientos artesanales cuidadosamente elaborados.
+          </p>
         </div>
-        <div class="card-body">
-          <span class="category-tag">Café Caliente</span>
-          <h3>Espresso</h3>
-          <p>Extracción precisa con notas intensas y perfil balanceado.</p>
-          <div class="card-footer">
-            <span class="price">Bs. 12</span>
-            <button class="btn-order">Ordenar</button>
+      </section>
+
+      <section class="menu-section">
+        <div class="container">
+          <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="hot">Café Caliente</button>
+            <button class="filter-btn" data-filter="methods">Métodos</button>
+            <button class="filter-btn" data-filter="cold">Bebidas Frías</button>
+            <button class="filter-btn" data-filter="pastry">Repostería</button>
+          </div>
+
+          <div class="menu-info">
+            <h2>Nuestras Especialidades</h2>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-category="hot">
+              <div class="card-img">
+                <img src="assets/espresso.jpg" alt="Espresso" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Café Caliente</span>
+                <h3>Espresso</h3>
+                <p>
+                  Extracción precisa con notas intensas y perfil balanceado.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 12</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="hot">
+              <div class="card-img">
+                <img src="assets/latte.jpg" alt="Latte" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Café Caliente</span>
+                <h3>Latte Artesanal</h3>
+                <p>Leche vaporizada con microespuma y espresso de origen.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 18</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="hot">
+              <div class="card-img">
+                <img src="assets/capuccino-caliente.jpg" alt="Cappuccino" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Café Caliente</span>
+                <h3>Cappuccino</h3>
+                <p>
+                  Equilibrio perfecto entre espresso, leche y espuma sedosa.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 16</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="methods">
+              <div class="card-img">
+                <img src="assets/v60.jpg" alt="V60" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Métodos</span>
+                <h3>V60</h3>
+                <p>
+                  Método filtrado que resalta notas florales y frutales del
+                  grano.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 22</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="methods">
+              <div class="card-img">
+                <img src="assets/iced-lemon-tea.jpg" alt="Chemex" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Métodos</span>
+                <h3>Chemex</h3>
+                <p>Perfil limpio y suave con cuerpo ligero y gran claridad.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 25</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="cold">
+              <div class="card-img">
+                <img src="assets/coldbrew.jpg" alt="Cold Brew" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Bebidas Frías</span>
+                <h3>Cold Brew</h3>
+                <p>Extracción en frío durante 18 horas, suave y refrescante.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 20</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="pastry">
+              <div class="card-img">
+                <img src="assets/cheesecake.jpg" alt="Cheesecake" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Repostería</span>
+                <h3>Cheesecake Artesanal</h3>
+                <p>
+                  Preparado en casa con ingredientes frescos y textura cremosa.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 24</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </article>
+      </section>
+    </main>
 
-      <article class="product-card">
-        <div class="card-img">
-          <img src="assets/latte.jpg" alt="Latte">
-        </div>
-        <div class="card-body">
-          <span class="category-tag">Café Caliente</span>
-          <h3>Latte Artesanal</h3>
-          <p>Leche vaporizada con microespuma y espresso de origen.</p>
-          <div class="card-footer">
-            <span class="price">Bs. 18</span>
-            <button class="btn-order">Ordenar</button>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <strong>Caine Cafe</strong>
+            <span>Cochabamba</span>
           </div>
+          <p>
+            Café de especialidad diseñado para quienes buscan calidad, sabor y
+            experiencia.
+          </p>
         </div>
-      </article>
-
-      <article class="product-card">
-        <div class="card-img">
-          <img src="assets/capuccino-caliente.jpg" alt="Cappuccino">
+        <div class="footer-links">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
         </div>
-        <div class="card-body">
-          <span class="category-tag">Café Caliente</span>
-          <h3>Cappuccino</h3>
-          <p>Equilibrio perfecto entre espresso, leche y espuma sedosa.</p>
-          <div class="card-footer">
-            <span class="price">Bs. 16</span>
-            <button class="btn-order">Ordenar</button>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>📍 Calle Pando esq. Buenos Aires, Cochabamba</p>
+          <p>📞 +591 4 411 2233</p>
+          <p>✉️ cafe@caine.com</p>
+        </div>
+        <div class="footer-social">
+          <div class="social-links">
+            <a href="https://x.com/?lang=es"
+              ><span
+                ><img src="assets/logoTwitter.png" alt="link a Twitter" /></span
+            ></a>
+            <a href="https://www.facebook.com/?locale=es_LA"
+              ><span
+                ><img
+                  src="assets/logo-fb-simple 2.png"
+                  alt="link a Facebook" /></span
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><span
+                ><img
+                  src="assets/logo-instagram 1.png"
+                  alt="link a Instagram" /></span
+            ></a>
           </div>
+          <p class="hours">
+            Horario:<br />
+            Lun - Vie: 7:30 - 20:30<br />
+            Sábado: 8:00 - 18:00
+          </p>
         </div>
-      </article>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Caine Cafe. Todos los derechos reservados.</p>
+      </div>
+    </footer>
 
-      <article class="product-card">
-        <div class="card-img">
-          <img src="assets/v60.jpg" alt="V60">
-        </div>
-        <div class="card-body">
-          <span class="category-tag">Métodos</span>
-          <h3>V60</h3>
-          <p>Método filtrado que resalta notas florales y frutales.</p>
-          <div class="card-footer">
-            <span class="price">Bs. 22</span>
-            <button class="btn-order">Ordenar</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card">
-        <div class="card-img">
-          <img src="assets/iced-lemon-tea.jpg" alt="Chemex">
-        </div>
-        <div class="card-body">
-          <span class="category-tag">Métodos</span>
-          <h3>Chemex</h3>
-          <p>Perfil limpio y suave con gran claridad.</p>
-          <div class="card-footer">
-            <span class="price">Bs. 25</span>
-            <button class="btn-order">Ordenar</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card">
-        <div class="card-img">
-          <img src="assets/coldbrew.jpg" alt="Cold Brew">
-        </div>
-        <div class="card-body">
-          <span class="category-tag">Bebidas Frías</span>
-          <h3>Cold Brew</h3>
-          <p>Extracción en frío durante 18 horas.</p>
-          <div class="card-footer">
-            <span class="price">Bs. 20</span>
-            <button class="btn-order">Ordenar</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card">
-        <div class="card-img">
-          <img src="assets/cheesecake.jpg" alt="Cheesecake">
-        </div>
-        <div class="card-body">
-          <span class="category-tag">Repostería</span>
-          <h3>Cheesecake Artesanal</h3>
-          <p>Preparado en casa con textura cremosa.</p>
-          <div class="card-footer">
-            <span class="price">Bs. 24</span>
-            <button class="btn-order">Ordenar</button>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-</main>
-
-</body>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

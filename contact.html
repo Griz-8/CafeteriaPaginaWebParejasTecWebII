@@ -1,182 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto | Caine Cafe</title>
-    <link rel="stylesheet" href="dist/css/main.css" />
-    <script type="module" src="src/js/main.js"></script>
-  </head>
-  <body class="contact-page">
-    <header>
-      <nav class="navbar">
-        <div class="container nav-content">
-          <a href="index.html" class="logo-wrapper">
-            <img src="assets/CaineLogo.png" alt="Caine Logo" />
-            <div class="logo-text">
-              <strong>Caine Cafe</strong>
-              <span>Cochabamba</span>
-            </div>
-          </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Caine Cafe</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body class="contact-page">
 
-          <button class="menu-toggle">☰</button>
-
-          <ul class="nav-links">
-            <li><a href="home.html">Inicio</a></li>
-            <li><a href="menu.html">Menú</a></li>
-            <li><a href="contact.html" class="active">Contacto</a></li>
-          </ul>
+<header>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="home.html" class="logo-wrapper">
+        <img src="assets/CaineLogo.png" alt="Caine Logo">
+        <div class="logo-text">
+          <strong>Caine Cafe</strong>
+          <span>Cochabamba</span>
         </div>
-      </nav>
-    </header>
+      </a>
 
-    <main>
-      <section class="contact-hero">
-        <div class="container">
-          <h1>Contáctanos</h1>
-          <p>
-            ¿Tienes alguna consulta o deseas saber más sobre nuestro café de
-            especialidad? Estamos aquí para ayudarte.
-          </p>
-        </div>
-      </section>
+      <button
+        class="nav-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="contact.html" class="active">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-      <section class="contact-main">
-        <div class="container contact-grid">
-          <div class="contact-info">
-            <h2>Información de Contacto</h2>
+<main>
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes alguna consulta o deseas saber más sobre nuestro café de especialidad? Estamos aquí para ayudarte.</p>
+    </div>
+  </section>
 
-            <div class="info-card">
-              <div class="info-icon">📍</div>
-              <div class="info-text">
-                <h3>Ubicación</h3>
-                <p>Calle Pando esquina Buenos Aires<br />Cochabamba, Bolivia</p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">📞</div>
-              <div class="info-text">
-                <h3>Teléfono</h3>
-                <p>+591 4 411 2233<br />+591 7 123 4567</p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">✉️</div>
-              <div class="info-text">
-                <h3>Email</h3>
-                <p>cafe@caine.com<br />info@caine.com</p>
-              </div>
-            </div>
-
-            <div class="info-card">
-              <div class="info-icon">⏰</div>
-              <div class="info-text">
-                <h3>Horario</h3>
-                <p>Lunes a Viernes: 7:30 - 20:30<br />Sábados: 8:00 - 18:00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-form-container">
-            <form class="contact-form">
-              <h2>Envíanos un Mensaje</h2>
-
-              <div class="form-group">
-                <label for="nombre">Nombre Completo *</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="tu@email.com"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="mensaje">Mensaje *</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  placeholder="Escribe tu mensaje aquí..."
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn-submit">Enviar Mensaje</button>
-            </form>
+  <section class="contact-main">
+    <div class="container contact-grid">
+      
+      <div class="contact-info">
+        <h2>Información de Contacto</h2>
+        
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div class="info-text">
+            <h3>Ubicación</h3>
+            <p>Calle Pando esquina Buenos Aires<br>Cochabamba, Bolivia</p>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <div class="logo">
-            <strong>Caine Cafe</strong>
-            <span>Cochabamba</span>
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <div class="info-text">
+            <h3>Teléfono</h3>
+            <p>+591 4 411 2233<br>+591 7 123 4567</p>
           </div>
-          <p>
-            Café de especialidad diseñado para quienes buscan calidad, sabor y
-            experiencia.
-          </p>
         </div>
-        <div class="footer-links">
-          <h4>Enlaces Rápidos</h4>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Menú</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Contacto</h4>
-          <p>📍 Calle Pando esq. Buenos Aires, Cochabamba</p>
-          <p>📞 +591 4 411 2233</p>
-          <p>✉️ cafe@caine.com</p>
-        </div>
-        <div class="footer-social">
-          <div class="social-links">
-            <a href="https://x.com/?lang=es"
-              ><span
-                ><img src="assets/logoTwitter.png" alt="link a Twitter" /></span
-            ></a>
-            <a href="https://www.facebook.com/?locale=es_LA"
-              ><span
-                ><img
-                  src="assets/logo-fb-simple 2.png"
-                  alt="link a Facebook" /></span
-            ></a>
-            <a href="https://www.instagram.com/"
-              ><span
-                ><img
-                  src="assets/logo-instagram 1.png"
-                  alt="link a Instagram" /></span
-            ></a>
+
+        <div class="info-card">
+          <div class="info-icon">✉️</div>
+          <div class="info-text">
+            <h3>Email</h3>
+            <p>cafe@caine.com<br>info@caine.com</p>
           </div>
-          <p class="hours">
-            Horario:<br />
-            Lun - Vie: 7:30 - 20:30<br />
-            Sábado: 8:00 - 18:00
-          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">⏰</div>
+          <div class="info-text">
+            <h3>Horario</h3>
+            <p>Lunes a Viernes: 7:30 - 20:30<br>Sábados: 8:00 - 18:00</p>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Caine Cafe. Todos los derechos reservados.</p>
+
+      <div class="contact-form-container">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h2>Envíanos un Mensaje</h2>
+          
+          <div class="form-group">
+            <label for="nombre">Nombre Completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
       </div>
-    </footer>
-  </body>
+
+    </div>
+  </section>
+
+  <section class="map-section" aria-label="Ubicación referencial">
+    <div class="container">
+      <div class="section-header">
+        <h2>¿Cómo llegar?</h2>
+        <p>Mapa referencial y opciones para visitarnos</p>
+      </div>
+      <div class="map-placeholder">
+        <div>
+          <span class="map-pin">📍</span>
+          <p>Caine Cafe - Zona Central, Cochabamba</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container arrival-grid">
+      <article class="arrival-card">
+        <h3>Transporte Público</h3>
+        <p>Líneas que pasan por la zona central y la calle Pando.</p>
+      </article>
+      <article class="arrival-card">
+        <h3>Vehículo Particular</h3>
+        <p>Parqueo cercano en calles adyacentes y zonas autorizadas.</p>
+      </article>
+      <article class="arrival-card">
+        <h3>Movilidad por App</h3>
+        <p>Comparte la referencia: Pando esquina Buenos Aires.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <strong>Caine Cafe</strong>
+        <span>Cochabamba</span>
+      </div>
+      <p>Café de especialidad diseñado para quienes buscan calidad, sabor y experiencia.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <p>📍 Calle Pando esq. Buenos Aires, Cochabamba</p>
+      <p>📞 +591 4 411 2233</p>
+      <p>✉️ cafe@caine.com</p>
+    </div>
+    <div class="footer-social">
+        <div class="social-links">
+          <a href="https://x.com/?lang=es"><span><img src="assets/logoTwitter.png" alt="link a Twitter"></span></a>
+          <a href="https://www.facebook.com/?locale=es_LA"><span><img src="assets/logo-fb-simple 2.png" alt="link a Facebook"></span></a>
+          <a href="https://www.instagram.com/"><span><img src="assets/logo-instagram 1.png" alt="link a Instagram"></span></a>
+        </div>
+      <p class="hours">Horario:<br> Lun - Vie: 7:30 - 20:30<br> Sábado: 8:00 - 18:00</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Caine Cafe. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
 </html>
