@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 .hero {
   position: relative; // Necesario para posicionar la imagen y el overlay
   height: 90vh;
@@ -24,13 +24,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1;
   }
 
   .hero-content {
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
     max-width: 45rem;
 
     h1 {
@@ -52,19 +52,31 @@
   color: var(--white);
   text-align: center;
 
-  .benefits-grid { @include grid-auto(18rem); margin-top: 3rem; }
+  .benefits-grid {
+    @include grid-auto(18rem);
+    margin-top: 3rem;
+  }
 
   .benefit-card {
     background: var(--bg-cream);
     color: var(--text-dark);
     padding: 2.5rem;
     border-radius: var(--radius);
-    .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 
+.center-btn {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
 .location {
-  padding: 5rem 0;
+  padding: 1rem;
   background: var(--primary);
   color: var(--white);
 
@@ -74,8 +86,17 @@
     align-items: center;
     gap: 4rem;
   }
-  .location-text, .location-image { flex: 1; min-width: 20rem; }
-  .location-image img { width: 100%; border-radius: var(--radius); }
+  .location-text,
+  .location-image {
+    flex: 1;
+    max-width: 30rem;
+    min-width: 15rem;
+  }
+  .location-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    height: auto;
+  }
 }
 
 // Botones generales
@@ -88,5 +109,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
-  &:hover { background: var(--accent-hover); }
+  &:hover {
+    background: var(--accent-hover);
+  }
 }

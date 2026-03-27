@@ -1,46 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caine Cafe | Cafetería de Especialidad</title>
-  <link rel="stylesheet" href="dist/css/main.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caine Cafe | Cafetería de Especialidad</title>
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
 
-<header>
-<nav class="navbar">
-  <div class="container nav-content">
-    <a href="index.html" class="logo-wrapper">
-      <img src="assets/CaineLogo.png" alt="Caine Logo">
-      <div class="logo-text">
-          <strong>Caine Cafe</strong>
-          <span>Cochabamba</span>
-        </div>
-      </a>
-      
-      <ul class="nav-links">
-        <li><a href="home.html" class="active">Inicio</a></li>
-        <li><a href="menu.html">Menú</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar">
+      <div class="container nav-content">
+        <a href="index.html" class="logo-wrapper">
+          <img src="assets/CaineLogo.png" alt="Caine Logo" />
+          <div class="logo-text">
+            <strong>Caine Cafe</strong>
+            <span>Cochabamba</span>
+          </div>
+        </a>
 
-<body>
-  <section class="hero">
-    <img src="assets/fotoCafeteriaNoche.jpg" alt="Interior de Caine Cafe" class="hero-bg">
-    
-    <div class="hero-overlay"></div>
-
-    <div class="container hero-content">
-      <h1>Bienvenidos a <br> Caine Cafe</h1>
-      <p>Café de especialidad en el corazón de Cochabamba.</p>
-      <div class="hero-actions">
-        <button class="btn-coffee">Ver Menú ➔</button>
+        <ul class="nav-links">
+          <li><a href="home.html" class="active">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </nav>
+  </header>
+
+  <body>
+    <section class="hero">
+      <img
+        src="assets/fotoCafeteriaNoche.jpg"
+        alt="Interior de Caine Cafe"
+        class="hero-bg"
+      />
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <h1>
+          Bienvenidos a <br />
+          Caine Cafe
+        </h1>
+        <p>Café de especialidad en el corazón de Cochabamba.</p>
+        <div class="hero-actions">
+          <button class="btn-coffee">Ver Menú ➔</button>
+        </div>
+      </div>
+    </section>
 
     <section class="why-us">
       <div class="container">
@@ -52,17 +59,26 @@
           <div class="benefit-card">
             <div class="icon">☕</div>
             <h3>Café de Especialidad</h3>
-            <p>Seleccionamos granos de origen y cuidamos cada proceso para resaltar su sabor.</p>
+            <p>
+              Seleccionamos granos de origen y cuidamos cada proceso para
+              resaltar su sabor.
+            </p>
           </div>
           <div class="benefit-card">
             <div class="icon">🔥</div>
             <h3>Tostado Artesanal</h3>
-            <p>Trabajamos con tostadores locales para garantizar frescura y calidad.</p>
+            <p>
+              Trabajamos con tostadores locales para garantizar frescura y
+              calidad.
+            </p>
           </div>
           <div class="benefit-card">
             <div class="icon">🌿</div>
             <h3>Ambiente Acogedor</h3>
-            <p>Un espacio diseñado para disfrutar, relajarte y compartir buenos momentos.</p>
+            <p>
+              Un espacio diseñado para disfrutar, relajarte y compartir buenos
+              momentos.
+            </p>
           </div>
         </div>
       </div>
@@ -75,40 +91,52 @@
           <p>Nuestras bebidas más destacadas</p>
         </div>
         <div class="products-grid">
-          <div class="product-card">
-            <img src="assets/latte.jpg" alt="Latte">
-            <div class="product-info">
+          <article class="product-card">
+            <div class="card-img">
+              <img src="assets/LattedeTemporada.jpg" alt="Latte de Temporada" />
+            </div>
+            <div class="card-body">
               <h3>Latte de Temporada</h3>
               <p>Preparado con ingredientes frescos y sabores de estación.</p>
-              <div class="price-row">
+              <div class="card-footer">
                 <span class="price">Bs. 18</span>
                 <button class="btn-order">Ordenar</button>
               </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/combo.jpg" alt="Combo">
-            <div class="product-info">
+          </article>
+
+          <article class="product-card">
+            <div class="card-img">
+              <img
+                src="assets/croissant-recien-horneado-taza-cafe-mesa-madera-blanca_518173-1315.avif"
+                alt="Combo"
+              />
+            </div>
+            <div class="card-body">
               <h3>Desayuno Caine</h3>
               <p>Café filtrado + croissant artesanal + jugo natural.</p>
-              <div class="price-row">
+              <div class="card-footer">
                 <span class="price">Bs. 25</span>
                 <button class="btn-order">Ordenar</button>
               </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="assets/cappuccino.jpg" alt="Cappuccino">
-            <div class="product-info">
+          </article>
+
+          <article class="product-card">
+            <div class="card-img">
+              <img src="assets/capuccino-caliente.jpg" alt="Cappuccino" />
+            </div>
+            <div class="card-body">
               <h3>Cappuccino Clásico</h3>
               <p>Equilibrio perfecto entre espresso, leche y microespuma.</p>
-              <div class="price-row">
+              <div class="card-footer">
                 <span class="price">Bs. 20</span>
                 <button class="btn-order">Ordenar</button>
               </div>
             </div>
-          </div>
+          </article>
         </div>
+
         <div class="center-btn">
           <button class="btn-coffee">Ver Menú Completo ➔</button>
         </div>
@@ -119,7 +147,11 @@
       <div class="container location-flex">
         <div class="location-text">
           <h2>Visítanos</h2>
-          <p>Nos encontramos en la esquina de la calle Pando y Buenos Aires, en Cochabamba. Un punto ideal para disfrutar café de especialidad en un ambiente moderno y relajado.</p>
+          <p>
+            Nos encontramos en la esquina de la calle Pando y Buenos Aires, en
+            Cochabamba. Un punto ideal para disfrutar café de especialidad en un
+            ambiente moderno y relajado.
+          </p>
           <ul class="location-features">
             <li>☕ Café preparado por baristas especializados</li>
             <li>🌿 Ambiente cómodo y elegante</li>
@@ -128,7 +160,7 @@
           <button class="btn-coffee">Ver Ubicación ➔</button>
         </div>
         <div class="location-image">
-          <img src="assets/cafe-interior.jpg" alt="Caine Cafe Interior">
+          <img src="assets/interiorjpg.jpg" alt="Caine Cafe Interior" />
         </div>
       </div>
     </section>
@@ -150,6 +182,7 @@
               <li class="disabled">× Beneficios exclusivos</li>
             </ul>
           </div>
+
           <div class="price-card popular">
             <h3>Amante del Café</h3>
             <div class="amount">Bs. 150 <span>/ Mes</span></div>
@@ -173,42 +206,62 @@
         </div>
       </div>
     </section>
-</body>
+  </body>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <div class="logo">
-        <strong>Caine Cafe</strong>
-        <span>Cochabamba</span>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <strong>Caine Cafe</strong>
+          <span>Cochabamba</span>
+        </div>
+        <p>
+          Café de especialidad diseñado para quienes buscan calidad, sabor y
+          experiencia.
+        </p>
       </div>
-      <p>Café de especialidad diseñado para quienes buscan calidad, sabor y experiencia.</p>
-    </div>
-    <div class="footer-links">
-      <h4>Enlaces Rápidos</h4>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Menú</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <h4>Contacto</h4>
-      <p>📍 Calle Pando esq. Buenos Aires, Cochabamba</p>
-      <p>📞 +591 4 411 2233</p>
-      <p>✉️ cafe@caine.com</p>
-    </div>
-    <div class="footer-social">
-      <h4>Síguenos</h4>
-      <div class="social-icons">
-        <span>📸</span> <span>📘</span> <span>🐦</span>
+      <div class="footer-links">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
       </div>
-      <p class="hours">Horario:<br> Lun - Vie: 7:30 - 20:30<br> Sábado: 8:00 - 18:00</p>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>📍 Calle Pando esq. Buenos Aires, Cochabamba</p>
+        <p>📞 +591 4 411 2233</p>
+        <p>✉️ cafe@caine.com</p>
+      </div>
+      <div class="footer-social">
+        <div class="social-links">
+          <a href="https://x.com/?lang=es"
+            ><span
+              ><img src="assets/logoTwitter.png" alt="link a Twitter" /></span
+          ></a>
+          <a href="https://www.facebook.com/?locale=es_LA"
+            ><span
+              ><img
+                src="assets/logo-fb-simple 2.png"
+                alt="link a Facebook" /></span
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><span
+              ><img
+                src="assets/logo-instagram 1.png"
+                alt="link a Instagram" /></span
+          ></a>
+        </div>
+        <p class="hours">
+          Horario:<br />
+          Lun - Vie: 7:30 - 20:30<br />
+          Sábado: 8:00 - 18:00
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Caine Cafe. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
+    <div class="footer-bottom">
+      <p>© 2026 Caine Cafe. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </html>

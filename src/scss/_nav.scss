@@ -1,12 +1,12 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 .navbar {
-  position: sticky;
+  position:sticky;
   top: 0;
   z-index: 1000;
   background-color: var(--primary);
-  padding: 1rem 0;
-  box-shadow: 0 0.2rem 1rem rgba(0,0,0,0.2);
+  padding: 0.5rem 0;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
 
   .nav-content {
     display: flex;
@@ -21,15 +21,25 @@
     text-decoration: none;
     color: var(--white);
 
-    img { width: 3rem; border-radius: 50%; }
-    strong { display: block; font-size: 1.1rem; }
-    span { font-size: 0.75rem; opacity: 0.8; }
+    img {
+      width: 5rem;
+      border-radius: 50%;
+    }
+    strong {
+      display: block;
+      font-size: 1.1rem;
+    }
+    span {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
   }
 
   .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
+    font-size: 1.1rem;
 
     a {
       color: var(--white);
@@ -37,11 +47,19 @@
       font-weight: 500;
       transition: var(--transition);
 
-      &:hover, &.active { color: var(--bg-cream); }
+      &:hover,
+      &.active {
+        color: var(--bg-cream);
+      }
+    }
+    .active{
+      text-decoration:underline;
     }
   }
 }
 
 @media (max-width: 48rem) {
-  .navbar .nav-links { display: none; } // Ideal para luego poner un menú hamburguesa
+  .navbar .nav-links {
+    display: none;
+  } // Ideal para luego poner un menú hamburguesa
 }
