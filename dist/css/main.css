@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .navbar .logo-wrapper {
   display: flex;
@@ -49,6 +50,14 @@
 .navbar .logo-wrapper span {
   font-size: 0.75rem;
   opacity: 0.8;
+}
+.navbar .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
 }
 .navbar .nav-links {
   display: flex;
@@ -70,8 +79,23 @@
 }
 
 @media (max-width: 48rem) {
+  .navbar .menu-toggle {
+    display: block;
+  }
   .navbar .nav-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--primary);
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .navbar .nav-links.active {
+    display: flex;
   }
 }
 .hero {

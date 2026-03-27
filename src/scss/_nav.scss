@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .navbar {
-  position:sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
   background-color: var(--primary);
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   .logo-wrapper {
@@ -25,14 +26,25 @@
       width: 5rem;
       border-radius: 50%;
     }
+
     strong {
       display: block;
       font-size: 1.1rem;
     }
+
     span {
       font-size: 0.75rem;
       opacity: 0.8;
     }
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
   }
 
   .nav-links {
@@ -52,14 +64,35 @@
         color: var(--bg-cream);
       }
     }
-    .active{
-      text-decoration:underline;
+
+    .active {
+      text-decoration: underline;
     }
   }
 }
 
 @media (max-width: 48rem) {
-  .navbar .nav-links {
-    display: none;
-  } // Ideal para luego poner un menú hamburguesa
+  .navbar {
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      background: var(--primary);
+      padding: 1.5rem 0;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+  }
 }
