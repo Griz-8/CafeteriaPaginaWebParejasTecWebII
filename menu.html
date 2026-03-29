@@ -54,9 +54,11 @@
           <div class="filter-container">
             <button class="filter-btn active" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="hot">Café Caliente</button>
+            <button class="filter-btn" data-filter="tea">Té caliente</button>
             <button class="filter-btn" data-filter="methods">Métodos</button>
             <button class="filter-btn" data-filter="cold">Bebidas Frías</button>
             <button class="filter-btn" data-filter="pastry">Repostería</button>
+            <button class="filter-btn" data-filter="combo">Combos</button>
           </div>
 
           <div class="menu-info">
@@ -83,7 +85,10 @@
 
             <article class="product-card" data-category="hot">
               <div class="card-img">
-                <img src="assets/Captura de pantalla 2026-03-22 224153.png" alt="Latte" />
+                <img
+                  src="assets/Captura de pantalla 2026-03-22 224153.png"
+                  alt="Latte"
+                />
               </div>
               <div class="card-body">
                 <span class="category-tag">Café Caliente</span>
@@ -113,9 +118,131 @@
               </div>
             </article>
 
+            <article class="product-card" data-category="hot">
+              <div class="card-img">
+                <img
+                  src="assets/americano-with-white-cup-saucer.jpg"
+                  alt="Imagen de un Cafe Americano"
+                />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Café Caliente</span>
+                <h3>Café Americano</h3>
+                <p>
+                  Shots de espresso cubierto con agua caliente, generando una
+                  fina capa cremosa.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 24</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="hot">
+              <div class="card-img">
+                <img
+                  src="assets/LattedeTemporada.jpg"
+                  alt="Latte de Temporada"
+                />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Café Caliente</span>
+                <h3>Latte de Temporada</h3>
+                <p>Preparado con ingredientes frescos y sabores de estación.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 18</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="tea">
+              <div class="card-img">
+                <img src="assets/side-view-cup-tea-with-cinnamon-sticks-wooden.jpg" alt="Te con canela"
+                />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Te Caliente</span>
+                <h3>Te con canela</h3>
+                <p>Bebida caliente de te negro con canela.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 18</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="tea">
+              <div class="card-img">
+                <img src="assets/Matcha_Latte_con_Leche_de_Avena_480x480.webp" alt="Matcha Latte"
+                />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Te Caliente</span>
+                <h3>Matcha Latte</h3>
+                <p>Bebida caliente de matcha con leche texturizada.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 28</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="tea">
+              <div class="card-img">
+                <img src="assets/matcha-leguide-complet.webp" alt="Matcha"
+                />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Te Caliente</span>
+                <h3>Matcha</h3>
+                <p>Bebida caliente de matcha.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 20</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="combo">
+              <div class="card-img">
+                <img
+                  src="assets/croissant-recien-horneado-taza-cafe-mesa-madera-blanca_518173-1315.avif"
+                  alt="Combo"
+                />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Combos</span>
+                <h3>Desayuno Caine</h3>
+                <p>Café filtrado + croissant artesanal + jugo natural.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 25</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="combo">
+              <div class="card-img">
+                <img src="assets/chocolate-brownie-with-latte-coffee-cup-sweet-dessert-delight-photo.jpg" alt="Brownie y Latte" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Combos</span>
+                <h3>Brownatte</h3>
+                <p>
+                  Brownie de Chocolate + Latte.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 22</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
             <article class="product-card" data-category="methods">
               <div class="card-img">
-                <img src="assets/v60.jpg" alt="V60" />
+                <img src="assets/v60.webp" alt="V60" />
               </div>
               <div class="card-body">
                 <span class="category-tag">Métodos</span>
@@ -133,7 +260,10 @@
 
             <article class="product-card" data-category="methods">
               <div class="card-img">
-                <img src="assets/chemex-classic-3cup-detail.webp" alt="Chemex" />
+                <img
+                  src="assets/chemex-classic-3cup-detail.webp"
+                  alt="Chemex"
+                />
               </div>
               <div class="card-body">
                 <span class="category-tag">Métodos</span>
@@ -161,6 +291,35 @@
               </div>
             </article>
 
+            <article class="product-card" data-category="cold">
+              <div class="card-img">
+                <img src="assets/iced-lemon-tea.jpg" alt="Imagen Iced Tea" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Bebidas Frías</span>
+                <h3>Iced Tea</h3>
+                <p>Bebida refrescante de te con hielo y limón.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 20</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="cold">
+              <div class="card-img">
+                <img src="assets/tea-still-life.jpg" alt="Imagen Iced Tea Frutilla" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Bebidas Frías</span>
+                <h3>Iced Tea de Frutilla</h3>
+                <p>Bebida refrescante de te con hielo, frutilla y limón.</p>
+                <div class="card-footer">
+                  <span class="price">Bs. 20</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
             <article class="product-card" data-category="pastry">
               <div class="card-img">
                 <img src="assets/cheesecake-500x375.jpg" alt="Cheesecake" />
@@ -173,6 +332,57 @@
                 </p>
                 <div class="card-footer">
                   <span class="price">Bs. 24</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="pastry">
+              <div class="card-img">
+                <img src="assets/BrazoGitanoChocolate.png" alt="Brazo Gitano de Chocolate" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Repostería</span>
+                <h3>Brazo Gitano de Chocolate</h3>
+                <p>
+                  Preparado en casa con ingredientes frescos.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 24</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="pastry">
+              <div class="card-img">
+                <img src="assets/slice-chocolate-brownie-with-walnut-vanilla-ice-cream.jpg" alt="Brownie con Helado de Vainilla" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Repostería</span>
+                <h3>Brownie con Helado de Vainilla</h3>
+                <p>
+                  Preparado en casa con ingredientes frescos.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 14</span>
+                  <button class="btn-order js-order-btn">Ordenar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="pastry">
+              <div class="card-img">
+                <img src="assets/gourmet-berry-cheesecake-with-raspberry-blueberry-sauce-generative-ai.jpg" alt="Flan" />
+              </div>
+              <div class="card-body">
+                <span class="category-tag">Repostería</span>
+                <h3>Flan de Vainilla</h3>
+                <p>
+                  Preparado en casa con ingredientes frescos.
+                </p>
+                <div class="card-footer">
+                  <span class="price">Bs. 14</span>
                   <button class="btn-order js-order-btn">Ordenar</button>
                 </div>
               </div>
